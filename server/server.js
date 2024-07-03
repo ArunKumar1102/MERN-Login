@@ -7,8 +7,8 @@ const app = express();
 const MONGB_UR= "mongodb://localhost:27017/ytLogin"
 
 
-
-app.use(express.json());
+ 
+app.use(express.json()); 
 app.use(cors());
 mongoose.connect(MONGB_UR);
 const db = mongoose.connection;
